@@ -1,4 +1,4 @@
-# IoT Engineer Technical Test — Code Cheat Sheet
+# Code Cheat Sheet
 
 **Platform assumption:** ESP32 / ESP8266 with the Arduino framework (the most common stack for IoT technical tests). Concepts transfer directly to STM32, Raspberry Pi Pico, or plain embedded C if the test uses a different MCU — only the HAL calls change.
 
