@@ -2,7 +2,6 @@
 
 **Platform assumption:** ESP32 / ESP8266 with the Arduino framework (the most common stack for IoT technical tests). Concepts transfer directly to STM32, Raspberry Pi Pico, or plain embedded C if the test uses a different MCU — only the HAL calls change.
 
-Given the job posting (hardware/software integration, DAQ testing, on-the-desk & on-the-field hardware testing, automotive/IoT hardware), this sheet leans extra on: communication protocols, GPS/CAN (vehicle telematics), and data-logging patterns — on top of the standard WiFi/MQTT basics.
 
 ---
 
@@ -823,7 +822,7 @@ client.loop_forever()
 
 ---
 
-## Quick Interview Notes (not code, but worth remembering)
+## Quick Notes (not code, but worth remembering)
 
 - **Blocking vs non-blocking:** Avoid `delay()` in production loops if anything else needs to run concurrently (WiFi, MQTT keepalive, button reads). Use `millis()`-based timing instead.
 - **`mqttClient.loop()` must be called frequently** or the connection drops on keepalive timeout.
